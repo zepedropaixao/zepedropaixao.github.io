@@ -2,3 +2,5 @@ theme: jekyll-theme-cayman
 title: Pedro Azeredo Paixão
 comments: true
 description: Serial Entrepeneur, Software Developer and Startup Enthusiast; MSc Informatics and Computing Engineering @ FEUP
+excerpt_separator: "<!-- more -->"
+permalink: /:title/
