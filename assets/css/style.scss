@@ -40,3 +40,25 @@
 .float-left, .float-left *, .float-right, .header-container {
     align-items: center;
 }
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media (max-width: 812px) { 
+    .float-left {
+        float: none;
+        display: block;
+        flex: 1;
+    }
+
+    .float-right {
+        float: none;
+        display: block;
+        padding-left: 0em;
+        flex: 1;
+    }
+
+    .header-container {
+        display: block;
+    }
+}
