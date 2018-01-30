@@ -1,36 +1,22 @@
 ---
-name: Who's using GitHub?
-tagline: Government agencies at the national, state, and local level use GitHub to share and collaborate. If you don't see your organization on this list, follow the instructions below to add it!
+title: Projects
 permalink: projects/
 ---
 
 # Projects
 
-## Infraspeak
+<div class="grid-container">
 
 
+{% include card.html url="infraspeak" img_url="../assets/imgs/infraspeak/background.jpg" title="Infraspeak" description="Interview by Porto Canal" %}
 
-<a href="{{ site.baseurl }}/projects/infraspeak">Know More</a>
+{% include card.html url="simi" img_url="../assets/imgs/simi/white.jpg" title="SIMI" description="Interview by Porto Canal" %}
 
-
-## SIMI
-
-asd
-asd
-asda
-asd
+{% include card.html url="leanhub" img_url="../assets/imgs/leanhub/background.jpg" title="LeanHub" description="Interview by Porto Canal" %}
 
 
-<a href="{{ site.baseurl }}/projects/simi">Know More</a>
+{% include card.html url="ontoextract" img_url="../assets/imgs/ontoextract/background.jpg" title="OntoExtract" description="Interview by Porto Canal" %}
 
-## LeanHub
+</div>
 
-
-<a href="{{ site.baseurl }}/projects/leanhub">Know More</a>
-
-## OntoExtract
-
-
-
-<a href="{{ site.baseurl }}/projects/ontoextract">Know More</a>
 

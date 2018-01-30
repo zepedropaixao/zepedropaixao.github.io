@@ -1,0 +1,12 @@
+<div class="card grid-item" onclick="goto('{{ include.url }}')">
+    <img src="{{ include.img_url }}" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>{{ include.title }}</b></h4> 
+        <p>{{ include.description }}</p> 
+    </div>
+</div>
+<script>
+function goto(i) {
+    window.location.href = i;
+}
+</script>

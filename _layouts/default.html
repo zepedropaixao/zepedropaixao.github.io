@@ -9,12 +9,17 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="shortcut icon" href="https://www.gravatar.com/avatar/0c915d0223f00045cd03f1d671fd2ba7?s=16" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   </head>
   <body>
     <section class="page-header">
       <div class="header-container">
           <div class="float-left">
-              <img src="https://www.gravatar.com/avatar/0c915d0223f00045cd03f1d671fd2ba7?s=200" />        
+            <div>
+                <img src="https://www.gravatar.com/avatar/0c915d0223f00045cd03f1d671fd2ba7?s=200" />
+                {% include svg-icons.html %}    
+            </div>
+              
           </div>
           <div class="float-right">
               <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
@@ -24,6 +29,7 @@
               <a href="{{ site.baseurl }}/" class="btn">About Me</a>
               <a href="{{ site.baseurl }}/projects" class="btn">Projects</a>
           </div>
+
       </div>
     </section>
 
@@ -31,6 +37,9 @@
       {{ content }}
 
       <footer class="site-footer">
+
+          {% include svg-icons.html %}
+
         <!--{% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}

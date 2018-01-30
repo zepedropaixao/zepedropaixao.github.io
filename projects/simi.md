@@ -14,7 +14,7 @@ The main intent of this product is to help restaurant managers increase their sa
 Everyone eats with their eyes first. 
 
 
-{% include figure.html url="../assets/imgs/simi/white.png" description="SIMI, a digital menu for restaurants." %}
+{% include figure.html url="../assets/imgs/simi/white.jpg" description="SIMI, a digital menu for restaurants." %}
 
 Besides helping control the sales it also allows the waiter to suggest wines according to the dish you choose to eat automatically, allowing for better cross-sales without risking to be inconvenient by, for example, suggesting more expensive wines.
 
@@ -60,7 +60,7 @@ Their software had been in the market for over 20 years and was widely implement
 We managed to built the demo for the Mozambique event and soon started to focus on building the back-office where the customers would configure their menus (at this point we just had a API and a mobile APP). We had an usable back-office in just 2 more months and started to focus on how to sell SIMI.
 
 
-{% include figure.html url="../assets/imgs/simi/dark.png" description="SIMI was ready to show in record time." %}
+{% include figure.html url="../assets/imgs/simi/dark.jpg" description="SIMI was ready to show in record time." %}
 
 ## Want it ALL - (Vision)
 
@@ -138,7 +138,7 @@ We managed to get an exit. A big company in terms of technical support and PoS s
 
 # Technical Solution
 
-On the technical side, SIMI is constituted mainly by a back-end a front-end and mobile app.
+On the technical side, SIMI is constituted mainly by a back-end a front-end and a mobile app.
 
 ## Back-End
 
@@ -160,7 +160,7 @@ We built another mobile application that never saw the light of day. It was the 
 
 
 {% include figure.html url="../assets/imgs/simi/phone-getcloser.jpg" %}
-{% include figure.html url="../assets/imgs/simi/order.png" %}
+{% include figure.html url="../assets/imgs/simi/order.jpg" %}
 {% include figure.html url="../assets/imgs/simi/phone-browse.jpg" %}
 {% include figure.html url="../assets/imgs/simi/phone-list.jpg" %}
 {% include figure.html url="../assets/imgs/simi/phone.jpg" %}

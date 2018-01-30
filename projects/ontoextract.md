@@ -3,6 +3,6 @@ title: OntoExtract
 permalink: projects/ontoextract
 ---
 
-![Logo](../assets/imgs/simi/logo.png){:class="project-logo"}
+![Logo](../assets/imgs/ontoextract/front.jpg){:class="project-logo"}
 
 TODO

@@ -3,7 +3,7 @@ title: LeanHub
 permalink: projects/leanhub
 ---
 
-![Logo](../assets/imgs/leanhub/logo.gif){:class="project-logo"}
+![Logo](../assets/imgs/leanhub/logo.png){:class="project-logo-leanhub"}
 
 # What is it?
 

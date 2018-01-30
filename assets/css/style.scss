@@ -77,6 +77,13 @@
     padding-top: 75px;
 }
 
+.project-logo-leanhub {
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding-top: 75px;
+}
+
 .project-logo {
     display: block;
     margin: auto;
@@ -95,4 +102,39 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    cursor: pointer;
+    margin:20px !important;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card .container {
+    padding: 2px 16px;
+}
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card img {
+    border-radius: 5px 5px 0 0;
 }
