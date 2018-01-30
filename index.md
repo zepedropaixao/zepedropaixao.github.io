@@ -2,7 +2,7 @@
 title: About Me
 ---
 
-## About Me
+# About Me
 
 My name is Pedro Azeredo Paixão and I'm a Software Engineer and an Entrepreneur. 
 
@@ -14,7 +14,19 @@ On the way I co-founded SIMI (https://www.getsimi.com) and LeanHub (https://www.
 
 Of my hobbies I'd say music related ones are favored. I play violin since I was 3 years old. I quite enjoy spending time with friends and take my part in a jam session.
 
-## Check out my app
+# My Resume / CV
+
+I have built my CV with XeLaTex, you can check the source [here](https://github.com/zepedropaixao/tex-resume) or just download the compiled pdf [here](https://github.com/zepedropaixao/tex-resume/raw/master/resume.pdf). 
+
+Alternatively visit my resume [page](resume).
+
+# The Main Projects
+
+The main projects where I got to be involved are furthered detailed in the projects [page](projects).
+
+Visit this page to go into details of what I have done in my life.
+
+# Check out my app
 
 I have built an application to be present myself. It was used to join Sandbox Network (Formerly called Thousand Network).
 

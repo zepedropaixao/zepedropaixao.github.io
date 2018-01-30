@@ -107,11 +107,19 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 10px;
 }
 
 .grid-item {
     text-align: center;
+}
+
+
+/* Portrait and Landscape */
+@media (max-width: 812px) { 
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
 
 .card {
@@ -120,7 +128,7 @@
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     cursor: pointer;
-    margin:20px !important;
+    margin:10px !important;
 }
 
 /* On mouse-over, add a deeper shadow */

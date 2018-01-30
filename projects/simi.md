@@ -7,7 +7,9 @@ permalink: projects/simi
 
 # What is it?
 
-SIMI is a digital menu for restaurants.  
+SIMI is a digital menu for restaurants.
+
+It is available online [here](http://getsimi.com).
 
 The main intent of this product is to help restaurant managers increase their sales by showcasing their dishes with professional photos on a tablet. 
 

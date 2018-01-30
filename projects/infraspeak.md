@@ -7,6 +7,6 @@ permalink: projects/infraspeak
 
 # What is it?
 
-{% include youtube.html url="https://www.youtube.com/embed/Df5VMGtH3mU?rel=0" description="Imfraspeak - Smart Technical Assistance" %}
+{% include youtube.html url="https://www.youtube.com/embed/Df5VMGtH3mU?rel=0" description="Infraspeak - Smart Technical Assistance" %}
 
 TODO
