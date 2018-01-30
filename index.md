@@ -8,23 +8,13 @@ My name is Pedro Azeredo Paixão and I'm a Software Engineer and an Entrepreneur
 
 I always liked technology and I got a PC at a very early age. Since that moment I became addicted to computers. In my parents place the computer usage time was completly manipulated by me.
 
-I am currently lead mobile software engineer at Infraspeak.
+I am currently lead mobile software engineer at [Infraspeak](projects/infraspeak).
 
-On the way I co-founded SIMI (https://www.getsimi.com) and LeanHub (https://www.lean-hub.com). In both SIMI and LeanHub I helped conceive, develop and implement the business as well as the product. Previously I did research work focused on text mining at SAPO Labs. Some projects in which I contributed: Verbetes and SemanticLists are still available online at SAPO. Of my earlier work I give focus to OntoExtract which gave origin to a book (available at Amazon).
+On the way I co-founded [SIMI](projects/simi) and [LeanHub](projects/leanhub). In both SIMI and LeanHub I helped conceive, develop and implement the business as well as the product. Previously I did research work focused on text mining at SAPO Labs. Some projects in which I contributed: Verbetes and SemanticLists are still available online at SAPO. Of my earlier work I give focus to [OntoExtract](projects/ontoextract) which gave origin to a book (available at Amazon).
 
 Of my hobbies I'd say music related ones are favored. I play violin since I was 3 years old. I quite enjoy spending time with friends and take my part in a jam session.
 
-# My Resume / CV
-
-I have built my CV with XeLaTex, you can check the source [here](https://github.com/zepedropaixao/tex-resume) or just download the compiled pdf [here](https://github.com/zepedropaixao/tex-resume/raw/master/resume.pdf). 
-
-Alternatively visit my resume [page](resume).
-
-# The Main Projects
-
-The main projects where I got to be involved are furthered detailed in the projects [page](projects).
-
-Visit this page to go into details of what I have done in my life.
+You can check my resume [here](resume).
 
 # Check out my app
 
