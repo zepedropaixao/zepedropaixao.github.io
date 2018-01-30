@@ -3,8 +3,7 @@ title: SIMI
 permalink: projects/simi
 ---
 
-
-![Logo](../assets/imgs/simi/logo.png){:class="project-logo"}
+![Logo](../assets/imgs/simi/logo.png){:class="project-logo-simi"}
 
 # What is it?
 
