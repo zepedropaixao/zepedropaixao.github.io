@@ -61,7 +61,6 @@ Their software had been in the market for over 20 years and was widely implement
 
 We managed to built the demo for the Mozambique event and soon started to focus on building the back-office where the customers would configure their menus (at this point we just had a API and a mobile APP). We had an usable back-office in just 2 more months and started to focus on how to sell SIMI.
 
-
 {% include figure.html url="../assets/imgs/simi/dark.jpg" description="SIMI was ready to show in record time." %}
 
 ## Want it ALL - (Vision)

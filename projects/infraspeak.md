@@ -15,22 +15,25 @@ More than a maintenance software, Infraspeak is a technical operations platform 
 
 {% include youtube.html url="https://www.youtube.com/embed/Df5VMGtH3mU?rel=0" description="Infraspeak - Smart Technical Assistance" %}
 
+## Story to explain Infraspeak
 
-To better illustrate what Infraspeak can do, especially for people outside the facility management or technical assistance world, I usually tell a story. I'm just going to go ahead and write it down here:
+To better illustrate what Infraspeak can do, especially for people outside the facility management or technical assistance world, I usually tell a story. 
 
-> Usually, what people outside the maintenance world don't know is that the maintenance world is huge. Every big building (hotels, office buildings, shopping centers, stadiums, airports, etc) and every company with a lot of distributed small spaces like stores (every retailer, every shoe shop brand, every travel agency with many stores, etc) they all need a lot of maintenance to operate. Even for only a hotel, sometimes the maintenance crew is over 10 people full-time with different schedules to be available 24/7. Maintenance usually represents millions of euros in the annal budget of most of these examples I just gave.
->
-> Every day, these maintenance crews have a lot of things to do. When there is a failure, anywhere in these big buildings, the maintenance crews are appointed to fix it ASAP. It's called corrective maintenance, when you go to fix an already existing problem. But usually, to avoid big surprises and big expenses replacing damaged machines, these maintenance crews preform preventive maintenance, which consist in scheduled interventions where several measurements are made and some part substitutions may happen.
+I'm just going to go ahead and write it down here:
+
+Usually, what people outside the maintenance world don't know is that the maintenance world is huge. Every big building (hotels, office buildings, shopping centers, stadiums, airports, etc) and every company with a lot of distributed small spaces like stores (every retailer, every shoe shop brand, every travel agency with many stores, etc) they all need a lot of maintenance to operate. Even for only a hotel, sometimes the maintenance crew is over 10 people full-time with different schedules to be available 24/7. Maintenance usually represents millions of euros in the annal budget of most of these examples I just gave.
+
+ Every day, these maintenance crews have a lot of things to do. When there is a failure, anywhere in these big buildings, the maintenance crews are appointed to fix it ASAP. It's called corrective maintenance, when you go to fix an already existing problem. But usually, to avoid big surprises and big expenses replacing damaged machines, these maintenance crews preform preventive maintenance, which consist in scheduled interventions where several measurements are made and some part substitutions may happen.
 
 Infraspeak comes in here. Infraspeak focuses on the day to day operations done by these maintenance crews and simplifies it drastically.
 
->With Infraspeak a technician just has to login on the app on his phone and touch one of the NFC tags previously installed in all the equipments that require maintenance. After he touches the NFC tag, the equipment loads in the app and all the maintenance tasks will appear for the technician to preform. He just has to introduce the readings and the task is completed! Now reports are automatically sent to the headquarters and the client. The technician can even sign the report with his finger.
->
->This simplifies and speeds up drastically the usual paper reports that needed to be filled up by hand and many times send by mail to the client.
->
->The other big advantage of Infraspeak is that because of the NFC tags, we guarantee that the technician actually went to the building to preform the required maintenance task.
->
->For the managers, they suddenly have access to all the information in real time, organized in easy to manage indicators. All reports can also be generated and sent from the back-office.
+With Infraspeak a technician just has to login on the app on his phone and touch one of the NFC tags previously installed in all the equipments that require maintenance. After he touches the NFC tag, the equipment loads in the app and all the maintenance tasks will appear for the technician to preform. He just has to introduce the readings and the task is completed! Now reports are automatically sent to the headquarters and the client. The technician can even sign the report with his finger.
+
+This simplifies and speeds up drastically the usual paper reports that needed to be filled up by hand and many times send by mail to the client.
+
+The other big advantage of Infraspeak is that because of the NFC tags, we guarantee that the technician actually went to the building to preform the required maintenance task.
+
+For the managers, they suddenly have access to all the information in real time, organized in easy to manage indicators. All reports can also be generated and sent from the back-office.
 
 Maintenance is usually forgotten by tech companies because it is not as "sexy" as some other fields for startups, so it is a rather under-developed area in terms of startup investment. We used this as an opportunity and thrived.
 
@@ -68,20 +71,46 @@ Our communication strategy and product development strategy according to clients
 
 Besides this, with each big client, a lot of new leads would emerge because of our NFC strategy - all the tags had our name and it was easy for technical assistance providers that visited one of our new clients to wonder what Infraspeak was and bite the bait. In a way we had a bootstrapping strategy that was financing our early team with each new client we made.
 
+We were not looking to be invested.
 
+In LIS (Lisbon Investment Summit) we managed to greatly showcase our success, in such a way that we convinced one of the co-founders of 500 Startups (that was present) to invite us to participate in their 18th batch in San Francisco (which was going to happen 15 days from the moment we were invited). Although we were not looking for investment, we couldn't say no to such a great opportunity and got invested by Caixa Capital and 500 startups for a pre-seed investment and went to San Francisco for 4 months to participate in their acceleration program, which was a great learning opportunity for us.
 
 ## Team spirit
 
+{% include figure.html url="../assets/imgs/infraspeak/team.jpg" description="Infraspeak's team is very united." %}
 
-## 15 minutes of fame
+The team is clearly the best asset of Infraspeak. Infraspeak managed for 2 years in a row to overcome more than 200% in sales growth and evolved from a 3 people team into a 15+ team in those 2 years.
 
+Infraspeak won many award like the Young Entrepreneur of the Year award, the top 25 companies from Portugal (we got a free stand in WebSummit thanks to this award) and many company acceleration program awards (programs that selected companied to become providers of a certain brand). 
+
+{% include figure.html url="../assets/imgs/infraspeak/team-websummit.jpg" description="Infraspeak's team at WebSummit." %}
+
+Infraspeak has a tradition that motivated the whole team to sell more. For each new client we would drink a different beer. This evolved into a ritual called Beer Celebration where we got to rate each of the beers we drank for each client with Infraspeak's app itself. After the ritual was over we would save the beer in our beer showcase.
+
+{% include figure.html url="../assets/imgs/infraspeak/founders.jpg" description="Infraspeak's founders showing off the beer showcase." %}
+
+## 15 minutes of fame (much more than 15 minutes actually :muscle:)
+
+Thanks to getting invested and participating the 500 Startups acceleration program, along with all the big client names and all the awards we won, Infraspeak got a lot of media coverage. Some examples:
+
+ - [Público](https://www.publico.pt/2017/12/06/economia/noticia/um-software-para-edificios-e-a-melhor-ideia-de-negocio-em-2017-1795093)
+ - [Diário de Notícias](https://www.dn.pt/lusa/interior/startup-infraspeak-vence-premio-do-jovem-empreendedor-da-anje-8953986.html)
+ - [RTP](https://www.rtp.pt/noticias/economia/startup-infraspeak-vence-premio-do-jovem-empreendedor-da-anje_n1043546)
+ - [ECO - Economia Online](https://eco.pt/2017/11/29/vila-gale-no-brasil-vao-ter-plataforma-da-infraspeak/)
+ - [Dinheiro Vivo](https://www.dinheirovivo.pt/fazedores/infraspeak-entra-no-reino-unido-a-acelerar-manutencao-de-centros-comerciais/)
+ - [Observador](http://observador.pt/2017/01/19/infraspeak-como-nasceu-a-startup-do-porto-que-cresceu-243-em-2016/)
+
+ We even got mentioned on the TechCrunch favorite list of the 18th batch of 500 Startups:
+ - [TechCrunch favorite list](https://techcrunch.com/gallery/our-favorite-startups-from-500-startups-18th-class/slide/11/)
 
 # Technical Solution
+
+On the technical side, Infraspeak is constituted by a back-end a front-end, a main mobile app used for technicians and two support mobile apps: direct app and operations app.
+
 
 ## Infraspeak Back-Office and Back-End
 
 ## Infraspeak Mobile App
-
 
 ## Infraspeak Direct App
 
