@@ -74,6 +74,8 @@ So we figured, why not use those digital boards that are used in schools? Just t
 
 Due to these requirements, we knew we had a challenge ahead of us. We used the [Atmosphere framework](https://github.com/Atmosphere/atmosphere) because it would provide an easy interface with WebSockets for our back-end made in [Play! Framework](https://www.playframework.com/) and also our frontend made in JavaScript. With WebSockets we could create real time interaction with the board. Each team member that would join in a meeting would see in real time what all the others were seeing and interact with the meeting also in real time.
 
+{% include figure.html url="../assets/imgs/leanhub/digital-board.jpg" description="The white board flexibility was a must." %}
+
 We wanted to keep the flexibility of a white board but also ally it to the tech world capabilities, meaning automatically calculating workloads, sent smart warning, store everything in a central place allowing for every member of the team to have access to KPI's and data anywhere. So, despite being able to freely draw inside a meeting session in LeanHub, each other action you would make, like assign a task to someone, would actually have repercussions in planed times, workload, etc, and a message would be automatically sent to the person to which the task was assigned, warning him of a new todo task.
 
 ## Outsourcing design, not usability
@@ -100,16 +102,22 @@ I figured that if I wanted to target distributed teams, the easiest way to do it
 
 ## My exit
 
-After delivering what I promised to KI, and 
+After delivering what I promised to KI (the 8 sprints), and even continuing with several extra sprint to better complete the product, it was time for me to go. 
+
+I had finally gotten the necessary investment for SIMI and decided to go back and head this project as it desperately required my attention.
+
+Nonetheless it was a very good experience, to lead and build LeanHub in such a short period of time. Overall it felt like a big win, managing to support the SIMI team with a parallel project that also went really great.
 
 ## Ironical paradox
 
+It makes you wonder, when you successfully build a project that actually generates revenue and pays itself just to support another one that doesn't pay itself yet.
+
+I would say that at least it is a very ironical thing. But I guess thats part of the fun of being alive and wanting to make a change.
+
 # Technical Solution
 
+LeanHub is a web application, it only needs a browser to run, even the digital white boards did not need any special kind of software, just a browser to open LeanHub. That said, LeanHub had a back-end in Java (Play! Framework) and a front-end made essentially with Scala.
 
-## Back-End
+It's database was in MySQL and there was an index built with Solr that was intended to make the search experience a smooth one.
 
-
-## Front-End
-
-TODO
+In regards to the live meeting room where people in different devices and different places could interact, we used WebSockets and the Atmosphere framework that smoothly integrates with Play! Framework and our Scala + JavaScript interface.
