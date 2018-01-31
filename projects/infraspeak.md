@@ -23,7 +23,7 @@ I'm just going to go ahead and write it down here:
 
 Usually, what people outside the maintenance world don't know is that the maintenance world is huge. Every big building (hotels, office buildings, shopping centers, stadiums, airports, etc) and every company with a lot of distributed small spaces like stores (every retailer, every shoe shop brand, every travel agency with many stores, etc) they all need a lot of maintenance to operate. Even for only a hotel, sometimes the maintenance crew is over 10 people full-time with different schedules to be available 24/7. Maintenance usually represents millions of euros in the annal budget of most of these examples I just gave.
 
- Every day, these maintenance crews have a lot of things to do. When there is a failure, anywhere in these big buildings, the maintenance crews are appointed to fix it ASAP. It's called corrective maintenance, when you go to fix an already existing problem. But usually, to avoid big surprises and big expenses replacing damaged machines, these maintenance crews preform preventive maintenance, which consist in scheduled interventions where several measurements are made and some part substitutions may happen.
+Every day, these maintenance crews have a lot of things to do. When there is a failure, anywhere in these big buildings, the maintenance crews are appointed to fix it ASAP. It's called corrective maintenance, when you go to fix an already existing problem. But usually, to avoid big surprises and big expenses replacing damaged machines, these maintenance crews preform preventive maintenance, which consist in scheduled interventions where several measurements are made and some part substitutions may happen.
 
 Infraspeak comes in here. Infraspeak focuses on the day to day operations done by these maintenance crews and simplifies it drastically.
 
@@ -37,11 +37,18 @@ For the managers, they suddenly have access to all the information in real time,
 
 Maintenance is usually forgotten by tech companies because it is not as "sexy" as some other fields for startups, so it is a rather under-developed area in terms of startup investment. We used this as an opportunity and thrived.
 
+{% include youtube.html url="https://www.youtube.com/embed/uNyGbGgw5iA?rel=0" description="Infraspeak - a short description about it" %}
+
 # My path at Infraspeak
 
 I entered Infraspeak in its early days as a company. Although Luís, our co-founder, had been working to create Infraspeak for some years, it only became a company in the end of 2015. I joined up in April of 2016. I was the second employee, and we were still not invested at the time. The company managed to bootstrap and make money from new sales each month allowing for us to regularly employ new people from that moment on.
 
 I entered Infraspeak with the objective to lead the company in developing its mobile app, which was essential for the business.
+
+I am responsible for the development of all the mobile applications of the company:
+- **Infraspeak mobile app** (main application) - aimed for technicians to use it on their daily operations
+- **Infraspeak direct app** - aimed for non-maintenance technicians to be able to report failures to the maintenance team
+- **Infraspeak operations app** - aimed for stationary technicians that perform maintenance tasks on the same equipments everyday
 
 ## First technical challenges
 
@@ -74,6 +81,8 @@ Besides this, with each big client, a lot of new leads would emerge because of o
 We were not looking to be invested.
 
 In LIS (Lisbon Investment Summit) we managed to greatly showcase our success, in such a way that we convinced one of the co-founders of 500 Startups (that was present) to invite us to participate in their 18th batch in San Francisco (which was going to happen 15 days from the moment we were invited). Although we were not looking for investment, we couldn't say no to such a great opportunity and got invested by Caixa Capital and 500 startups for a pre-seed investment and went to San Francisco for 4 months to participate in their acceleration program, which was a great learning opportunity for us.
+
+{% include figure.html url="../assets/imgs/infraspeak/winner-yeoty.jpg" description="Infraspeak's team when we won the Young Entrepreneur of the Year Award by ANJE" %}
 
 ## Team spirit
 
@@ -110,8 +119,30 @@ On the technical side, Infraspeak is constituted by a back-end a front-end, a ma
 
 ## Infraspeak Back-Office and Back-End
 
+The back-end is built using PHP (Laravel) and between several other technologies Vue.js is used to built the back-office interface.
+
+{% include figure.html url="../assets/imgs/infraspeak/backoffice.jpg" description="Infraspeak's back-office allows managers to control the whole operation" %}
+
 ## Infraspeak Mobile App
+
+The main mobile app is a Native Android app, primarily built with Java. Of the technology stack I could give emphasis to:
+- DBFlow - the ORM used,
+- EventBus - to fire events making it easy to communicate between background threads and the UI thread
+- Android Priority Job Queue - used to simplify background jobs and the order through which they should be executed
+- Retrofit - used to make requests to our API
+
+This application is built following the MVP architecture. At some point we used MVVM architecture to simplify the handling of the models in some RecyclerViews.
+
+{% include figure.html url="../assets/imgs/infraspeak/app.png" description="Infraspeak's mobile app is used by thousands of technicians every day" %}
 
 ## Infraspeak Direct App
 
+This app was built using the ionic framework, which is a framework based on JavaScript and Angular that has many components that look like native mobile components. We then encapsulated this web application into an app for iOS and Android using Cordova.
+
+{% include figure.html url="../assets/imgs/infraspeak/direct.png" description="Infraspeak's direct app is focused in allowing non-maintenance technicians to report new failures" %}
+
 ## Infraspeak Operations App
+
+This app was built using the Quasar Framework, which is a View.js based framework focused on creating mobile applications, much like ionic but this time based on View.js.
+
+{% include figure.html url="../assets/imgs/infraspeak/operations.jpg" description="Infraspeak's operations app targets stationary technicians" %}
