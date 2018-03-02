@@ -50,7 +50,7 @@ We started the company in April 2012 and in August we already wanted to particip
 
 The first iteration of SIMI (still not even called SIMI) was intended to be a menu that would integrate directly with the main PoS system, import all the dishes and allow for an easy creation of a menu. It was totally focused on improving the operations of a restaurant, meaning: to simplify requests, send them directly to the kitchen, reduce waiting times and that was mainly it.
 
-{% include figure.html url="/assets/imgs/simi/devices.png" description="Tablets were ideal to ease the transition between paper menus and our digital ones." %}
+{% include figure.html url="/assets/imgs/simi/devices.jpg" description="Tablets were ideal to ease the transition between paper menus and our digital ones." %}
 
 We believed that it would be hard to ask for restaurant customers to install an APP on their cellphone just to place orders, so we thought that the easiest way to enter the market would be to give a menu to a customer that would be necessarily similar to what it was util then, meaning, the paper menu. A tablet is very similar in shape to a paper menu and can easily substitute the paper one without much change in the usual day-to-day of the waiters.
 
@@ -126,7 +126,7 @@ Thanks to PizzaHut adhering to SIMI, we got a lot of media exposure:
  - [dinheiro vivo](https://www.dinheirovivo.pt/invalidos/ibersol-investe-4-milhoes-na-remodelacao-de-restaurantes-pizza-hut-e-lanca-phmenu/)
  - [Portugal Startups](http://portugalstartups.com/2014/10/pizza-hut-closes-deal-simi/)
 
-{% include figure.html url="/assets/imgs/simi/press.png" description="SIMI appeared in several major Portuguese newspapers." %}
+{% include figure.html url="/assets/imgs/simi/press.jpg" description="SIMI appeared in several major Portuguese newspapers." %}
 
 We even showed up on television:
 
