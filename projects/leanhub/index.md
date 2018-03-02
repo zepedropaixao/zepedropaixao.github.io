@@ -1,9 +1,10 @@
 ---
 title: LeanHub
-permalink: projects/leanhub
+permalink: projects/leanhub/
+breadcrumb: LeanHub
 ---
 
-![Logo](../assets/imgs/leanhub/logo.png){:class="project-logo-leanhub"}
+![Logo](/assets/imgs/leanhub/logo.png){:class="project-logo-leanhub"}
 
 # What is it?
 
@@ -54,11 +55,11 @@ Although I was responsible for the product definition and implementation, I was 
 
 We implemented a landing page that allowed clients to subscribe to our newsletter to try to guarantee interest around the product.
 
-{% include figure.html url="../assets/imgs/leanhub/landingpage.jpeg" description="LeanHub's landing page was designed to assess interest during the development." %}
+{% include figure.html url="/assets/imgs/leanhub/landingpage.jpeg" description="LeanHub's landing page was designed to assess interest during the development." %}
 
 While the development of the platform was being done we also created a blog where KI consultants would regularly post articles with knowhow about kaizen methodologies, to create the sense that we, LeanHub, were the goto place for knowhow. It's easier to sell if you've already established that you are the goto place for knowhow on the thing you want to sell.
 
-{% include figure.html url="../assets/imgs/leanhub/blog.jpg" description="LeanHub's blog ascertained our position as a goto place for knowhow on Kaizen Methodologies." %}
+{% include figure.html url="/assets/imgs/leanhub/blog.jpg" description="LeanHub's blog ascertained our position as a goto place for knowhow on Kaizen Methodologies." %}
 
 ## Software Engineering
 
@@ -74,7 +75,7 @@ So we figured, why not use those digital boards that are used in schools? Just t
 
 Due to these requirements, we knew we had a challenge ahead of us. We used the [Atmosphere framework](https://github.com/Atmosphere/atmosphere) because it would provide an easy interface with WebSockets for our back-end made in [Play! Framework](https://www.playframework.com/) and also our frontend made in JavaScript. With WebSockets we could create real time interaction with the board. Each team member that would join in a meeting would see in real time what all the others were seeing and interact with the meeting also in real time.
 
-{% include figure.html url="../assets/imgs/leanhub/digital-board.jpg" description="The white board flexibility was a must." %}
+{% include figure.html url="/assets/imgs/leanhub/digital-board.jpg" description="The white board flexibility was a must." %}
 
 We wanted to keep the flexibility of a white board but also ally it to the tech world capabilities, meaning automatically calculating workloads, sent smart warning, store everything in a central place allowing for every member of the team to have access to KPI's and data anywhere. So, despite being able to freely draw inside a meeting session in LeanHub, each other action you would make, like assign a task to someone, would actually have repercussions in planed times, workload, etc, and a message would be automatically sent to the person to which the task was assigned, warning him of a new todo task.
 
@@ -84,11 +85,11 @@ Since we had no designer in our team, we needed to get it from somewhere else. W
 
 Even our identity was conceived this way, with a brief that defined our core values the persona we wanted to represent and the target clients we wanted to get.
 
-{% include figure.html url="../assets/imgs/leanhub/logo-contest.png" description="LeanHub's logo was developed using 99designs." %}
+{% include figure.html url="/assets/imgs/leanhub/logo-contest.png" description="LeanHub's logo was developed using 99designs." %}
 
 For the design of new features, after the definition of our requirements in our Design Sprint, we would send the final mockups to our designer in 99designs and obtain the final designs.
 
-{% include figure.html url="../assets/imgs/leanhub/mockup.jpeg" description="LeanHub's mockup example that was sent to the design team." %}
+{% include figure.html url="/assets/imgs/leanhub/mockup.jpeg" description="LeanHub's mockup example that was sent to the design team." %}
 
 All our mockup design was made in-house in our design sprints, where we would even test the usability of our proposed new features with real potential clients. Just the "beautification" of the mockups was done as an outsourced service.
 

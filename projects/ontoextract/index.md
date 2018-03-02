@@ -1,9 +1,10 @@
 ---
 title: OntoExtract
-permalink: projects/ontoextract
+permalink: projects/ontoextract/
+breadcrumb: OntoExtract
 ---
 
-![Logo](../assets/imgs/ontoextract/logo.png){:class="project-logo-oe"}
+![Logo](/assets/imgs/ontoextract/logo.png){:class="project-logo-oe"}
 
 # What is it?
 
@@ -62,4 +63,4 @@ Automatic Extraction of Biographical Data :
 - **Amazon link**: [Amazon link](https://www.amazon.com/Automatic-Extraction-of-Biographical-Data/dp/3659215740)
 
 
-{% include figure.html url="../assets/imgs/ontoextract/book.png" description="OntoExtract's gave origin to a book that is published on Amazon" %}
+{% include figure.html url="/assets/imgs/ontoextract/book.png" description="OntoExtract's gave origin to a book that is published on Amazon" %}

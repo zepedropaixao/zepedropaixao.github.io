@@ -1,9 +1,10 @@
 ---
 title: SIMI
-permalink: projects/simi
+permalink: projects/simi/
+breadcrumb: SIMI
 ---
 
-![Logo](../assets/imgs/simi/logo.png){:class="project-logo-simi"}
+![Logo]({{ site.base_url }}/assets/imgs/simi/logo.png){:class="project-logo-simi"}
 
 # What is it?
 
@@ -16,7 +17,7 @@ The main intent of this product is to help restaurant managers increase their sa
 Everyone eats with their eyes first. 
 
 
-{% include figure.html url="../assets/imgs/simi/white.jpg" description="SIMI, a digital menu for restaurants." %}
+{% include figure.html url="/assets/imgs/simi/white.jpg" description="SIMI, a digital menu for restaurants." %}
 
 Besides helping control the sales it also allows the waiter to suggest wines according to the dish you choose to eat automatically, allowing for better cross-sales without risking to be inconvenient by, for example, suggesting more expensive wines.
 
@@ -49,7 +50,7 @@ We started the company in April 2012 and in August we already wanted to particip
 
 The first iteration of SIMI (still not even called SIMI) was intended to be a menu that would integrate directly with the main PoS system, import all the dishes and allow for an easy creation of a menu. It was totally focused on improving the operations of a restaurant, meaning: to simplify requests, send them directly to the kitchen, reduce waiting times and that was mainly it.
 
-{% include figure.html url="../assets/imgs/simi/devices.png" description="Tablets were ideal to ease the transition between paper menus and our digital ones." %}
+{% include figure.html url="/assets/imgs/simi/devices.png" description="Tablets were ideal to ease the transition between paper menus and our digital ones." %}
 
 We believed that it would be hard to ask for restaurant customers to install an APP on their cellphone just to place orders, so we thought that the easiest way to enter the market would be to give a menu to a customer that would be necessarily similar to what it was util then, meaning, the paper menu. A tablet is very similar in shape to a paper menu and can easily substitute the paper one without much change in the usual day-to-day of the waiters.
 
@@ -61,7 +62,7 @@ Their software had been in the market for over 20 years and was widely implement
 
 We managed to built the demo for the Mozambique event and soon started to focus on building the back-office where the customers would configure their menus (at this point we just had a API and a mobile APP). We had an usable back-office in just 2 more months and started to focus on how to sell SIMI.
 
-{% include figure.html url="../assets/imgs/simi/dark.jpg" description="SIMI was ready to show in record time." %}
+{% include figure.html url="/assets/imgs/simi/dark.jpg" description="SIMI was ready to show in record time." %}
 
 ## Want it ALL - (Vision)
 
@@ -73,7 +74,7 @@ Nonetheless, our vision was still to have a more vertical solution around the re
 
 ## Go to Market
 
-{% include figure.html url="../assets/imgs/simi/pulcinni.jpg" description="Pulcinni was our very first client. A true early adopter." %}
+{% include figure.html url="/assets/imgs/simi/pulcinni.jpg" description="Pulcinni was our very first client. A true early adopter." %}
 
 After the initial product was built, we started to contact clients (mostly through our partnership with the PoS system that we integrated with). The very first to show some interest was Pulcinni, a nice italian restaurant in Leça da Palmeira.
 
@@ -101,7 +102,7 @@ Although we got to a few clients quite fast, the partnership we've built to allo
 
 Because of this we tried to find other ways to sell massively SIMI and also started to understand that SIMI's main value to the clients was not the operational improvement, but the marketing effect it could generate with curiosity and the increase in sales it provoked for customers that had already gone in, meaning the ticket per meal was becoming greater for tables that in fact used SIMI, thanks to the images and cross selling of wines. 
 
-{% include figure.html url="../assets/imgs/simi/golf.jpg" description="SIMI's was valuable as a tool for sales." %}
+{% include figure.html url="/assets/imgs/simi/golf.jpg" description="SIMI's was valuable as a tool for sales." %}
 
 When we realized that most of the value of the menu was in good professional pictures of the dishes, we realized that photographers also had an interest in the implementation of the SIMI Menu - it was the perfect reason for any restaurant to photograph all the dishes.
 
@@ -113,7 +114,7 @@ This pivot was more in the business model and in the way we communicated SIMI ra
 
 PizzaHut started to have interest in SIMI after a visit of the Head of PizzaHut Portugal to a restaurant that was already using SIMI.
 
-{% include figure.html url="../assets/imgs/simi/pizzahut.jpg" description="PizzaHut in Portugal adopted SIMI and called it PH Menu." %}
+{% include figure.html url="/assets/imgs/simi/pizzahut.jpg" description="PizzaHut in Portugal adopted SIMI and called it PH Menu." %}
 
 For the successful implementation of the PizzaHut's menu, several features had to be tailor made for PizzaHut.
 
@@ -125,7 +126,7 @@ Thanks to PizzaHut adhering to SIMI, we got a lot of media exposure:
  - [dinheiro vivo](https://www.dinheirovivo.pt/invalidos/ibersol-investe-4-milhoes-na-remodelacao-de-restaurantes-pizza-hut-e-lanca-phmenu/)
  - [Portugal Startups](http://portugalstartups.com/2014/10/pizza-hut-closes-deal-simi/)
 
-{% include figure.html url="../assets/imgs/simi/press.png" description="SIMI appeared in several major Portuguese newspapers." %}
+{% include figure.html url="/assets/imgs/simi/press.png" description="SIMI appeared in several major Portuguese newspapers." %}
 
 We even showed up on television:
 
@@ -149,7 +150,7 @@ The back end was build with Play Framework 1.4 (Java) and a MySQL database. The 
 
 SIMI's front-end was built using Foundation, Backbone.js, Underscore.js and jQuery.
 
-{% include figure.html url="../assets/imgs/simi/backoffice.jpg" description="SIMI's back office was designed for easy configuration." %}
+{% include figure.html url="/assets/imgs/simi/backoffice.jpg" description="SIMI's back office was designed for easy configuration." %}
 
 ## Mobile App (iOS and Android)
 
@@ -160,10 +161,10 @@ SIMI's mobile app was built using Sencha Touch and Ext. We decided to use these 
 We built another mobile application that never saw the light of day. It was the cellphone application. It was ready to browse all the restaurants around a certain GPS location, rate restaurants and it would allow to create dishes from pictures taken by the phone itself. I will just leave you guys with some pictures of it:
 
 
-{% include figure.html url="../assets/imgs/simi/phone-getcloser.jpg" %}
-{% include figure.html url="../assets/imgs/simi/order.jpg" %}
-{% include figure.html url="../assets/imgs/simi/phone-browse.jpg" %}
-{% include figure.html url="../assets/imgs/simi/phone-list.jpg" %}
-{% include figure.html url="../assets/imgs/simi/phone.jpg" %}
+{% include figure.html url="/assets/imgs/simi/phone-getcloser.jpg" %}
+{% include figure.html url="/assets/imgs/simi/order.jpg" %}
+{% include figure.html url="/assets/imgs/simi/phone-browse.jpg" %}
+{% include figure.html url="/assets/imgs/simi/phone-list.jpg" %}
+{% include figure.html url="/assets/imgs/simi/phone.jpg" %}
 
 

@@ -1,9 +1,10 @@
 ---
 title: Infraspeak
-permalink: projects/infraspeak
+permalink: projects/infraspeak/
+breadcrumb: Infraspeak
 ---
 
-![Logo](../assets/imgs/infraspeak/logo.png){:class="project-logo"}
+![Logo](/assets/imgs/infraspeak/logo.png){:class="project-logo"}
 
 # What is it?
 
@@ -82,21 +83,21 @@ We were not looking to be invested.
 
 In LIS (Lisbon Investment Summit) we managed to greatly showcase our success, in such a way that we convinced one of the co-founders of 500 Startups (that was present) to invite us to participate in their 18th batch in San Francisco (which was going to happen 15 days from the moment we were invited). Although we were not looking for investment, we couldn't say no to such a great opportunity and got invested by Caixa Capital and 500 startups for a pre-seed investment and went to San Francisco for 4 months to participate in their acceleration program, which was a great learning opportunity for us.
 
-{% include figure.html url="../assets/imgs/infraspeak/winner-yeoty.jpg" description="Infraspeak's team when we won the Young Entrepreneur of the Year Award by ANJE" %}
+{% include figure.html url="/assets/imgs/infraspeak/winner-yeoty.jpg" description="Infraspeak's team when we won the Young Entrepreneur of the Year Award by ANJE" %}
 
 ## Team spirit
 
-{% include figure.html url="../assets/imgs/infraspeak/team.jpg" description="Infraspeak's team is very united." %}
+{% include figure.html url="/assets/imgs/infraspeak/team.jpg" description="Infraspeak's team is very united." %}
 
 The team is clearly the best asset of Infraspeak. Infraspeak managed for 2 years in a row to overcome more than 200% in sales growth and evolved from a 3 people team into a 15+ team in those 2 years.
 
 Infraspeak won many award like the Young Entrepreneur of the Year award, the top 25 companies from Portugal (we got a free stand in WebSummit thanks to this award) and many company acceleration program awards (programs that selected companied to become providers of a certain brand). 
 
-{% include figure.html url="../assets/imgs/infraspeak/team-websummit.jpg" description="Infraspeak's team at WebSummit." %}
+{% include figure.html url="/assets/imgs/infraspeak/team-websummit.jpg" description="Infraspeak's team at WebSummit." %}
 
 Infraspeak has a tradition that motivated the whole team to sell more. For each new client we would drink a different beer. This evolved into a ritual called Beer Celebration where we got to rate each of the beers we drank for each client with Infraspeak's app itself. After the ritual was over we would save the beer in our beer showcase.
 
-{% include figure.html url="../assets/imgs/infraspeak/founders.jpg" description="Infraspeak's founders showing off the beer showcase." %}
+{% include figure.html url="/assets/imgs/infraspeak/founders.jpg" description="Infraspeak's founders showing off the beer showcase." %}
 
 ## 15 minutes of fame (much more than 15 minutes actually :muscle:)
 
@@ -121,7 +122,7 @@ On the technical side, Infraspeak is constituted by a back-end a front-end, a ma
 
 The back-end is built using PHP (Laravel) and between several other technologies Vue.js is used to built the back-office interface.
 
-{% include figure.html url="../assets/imgs/infraspeak/backoffice.jpg" description="Infraspeak's back-office allows managers to control the whole operation" %}
+{% include figure.html url="/assets/imgs/infraspeak/backoffice.jpg" description="Infraspeak's back-office allows managers to control the whole operation" %}
 
 ## Infraspeak Mobile App
 
@@ -133,16 +134,16 @@ The main mobile app is a Native Android app, primarily built with Java. Of the t
 
 This application is built following the MVP architecture. At some point we used MVVM architecture to simplify the handling of the models in some RecyclerViews.
 
-{% include figure.html url="../assets/imgs/infraspeak/app.png" description="Infraspeak's mobile app is used by thousands of technicians every day" %}
+{% include figure.html url="/assets/imgs/infraspeak/app.png" description="Infraspeak's mobile app is used by thousands of technicians every day" %}
 
 ## Infraspeak Direct App
 
 This app was built using the ionic framework, which is a framework based on JavaScript and Angular that has many components that look like native mobile components. We then encapsulated this web application into an app for iOS and Android using Cordova.
 
-{% include figure.html url="../assets/imgs/infraspeak/direct.png" description="Infraspeak's direct app is focused in allowing non-maintenance technicians to report new failures" %}
+{% include figure.html url="/assets/imgs/infraspeak/direct.png" description="Infraspeak's direct app is focused in allowing non-maintenance technicians to report new failures" %}
 
 ## Infraspeak Operations App
 
 This app was built using the Quasar Framework, which is a View.js based framework focused on creating mobile applications, much like ionic but this time based on View.js.
 
-{% include figure.html url="../assets/imgs/infraspeak/operations.jpg" description="Infraspeak's operations app targets stationary technicians" %}
+{% include figure.html url="/assets/imgs/infraspeak/operations.jpg" description="Infraspeak's operations app targets stationary technicians" %}

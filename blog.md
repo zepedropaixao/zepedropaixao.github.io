@@ -1,5 +1,6 @@
 ---
 title: Welcome
+breadcrumb: Blog
 ---
 
 <div class="posts">
