@@ -13,5 +13,5 @@ I have built my CV with XeLaTex, you can check the source [here](https://github.
   Instead you can <a href="/assets/pdf/resume.pdf">click here to
   download the PDF file.</a></p>
 
-  <img src="/assets/imgs/resume.svg"></img>
+  <img src="/assets/imgs/resume.svg" />
 </object>
