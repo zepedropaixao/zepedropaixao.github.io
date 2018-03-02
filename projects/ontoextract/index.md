@@ -63,4 +63,4 @@ Automatic Extraction of Biographical Data :
 - **Amazon link**: [Amazon link](https://www.amazon.com/Automatic-Extraction-of-Biographical-Data/dp/3659215740)
 
 
-{% include figure.html url="/assets/imgs/ontoextract/book.png" description="OntoExtract's gave origin to a book that is published on Amazon" %}
+{% include figure.html url="/assets/imgs/ontoextract/book.jpg" description="OntoExtract's gave origin to a book that is published on Amazon" %}
