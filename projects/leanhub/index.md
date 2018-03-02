@@ -85,7 +85,7 @@ Since we had no designer in our team, we needed to get it from somewhere else. W
 
 Even our identity was conceived this way, with a brief that defined our core values the persona we wanted to represent and the target clients we wanted to get.
 
-{% include figure.html url="/assets/imgs/leanhub/logo-contest.png" description="LeanHub's logo was developed using 99designs." %}
+{% include figure.html url="/assets/imgs/leanhub/logo-contest.jpg" description="LeanHub's logo was developed using 99designs." %}
 
 For the design of new features, after the definition of our requirements in our Design Sprint, we would send the final mockups to our designer in 99designs and obtain the final designs.
 
