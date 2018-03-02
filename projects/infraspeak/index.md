@@ -134,13 +134,13 @@ The main mobile app is a Native Android app, primarily built with Java. Of the t
 
 This application is built following the MVP architecture. At some point we used MVVM architecture to simplify the handling of the models in some RecyclerViews.
 
-{% include figure.html url="/assets/imgs/infraspeak/app.png" description="Infraspeak's mobile app is used by thousands of technicians every day" %}
+{% include figure.html url="/assets/imgs/infraspeak/app.jpg" description="Infraspeak's mobile app is used by thousands of technicians every day" %}
 
 ## Infraspeak Direct App
 
 This app was built using the ionic framework, which is a framework based on JavaScript and Angular that has many components that look like native mobile components. We then encapsulated this web application into an app for iOS and Android using Cordova.
 
-{% include figure.html url="/assets/imgs/infraspeak/direct.png" description="Infraspeak's direct app is focused in allowing non-maintenance technicians to report new failures" %}
+{% include figure.html url="/assets/imgs/infraspeak/direct.jpg" description="Infraspeak's direct app is focused in allowing non-maintenance technicians to report new failures" %}
 
 ## Infraspeak Operations App
 
