@@ -16,13 +16,75 @@ This is a new paradigm that implies having in consideration foreground lifecycle
 
 ## Activities
 
+Activities are a single focused thing a user will do. Because of this, activities normally implement some sort of UI - through the method setContentView(layout) you can inflate your XML layout to the view.
 
 As a user navigates through, out of, and back to your app, the Activity instances in your app transition through different states in their lifecycle. 
 
 The Activity class provides a number of callbacks that allow the activity to know that a state has changed: that the system is creating, stopping, or resuming an activity, or destroying the process in which the activity resides.
 
 
+
+{% include figure.html url="../assets/imgs/activity-lifecycle.png" description="Activity Lifecycle - source: developer.android.com" %}
+
+All the lifecycle callbacks are shown in the following code excerpt. All of these are hooks that you can override to do appropriate work when the activity changes state. Normally we do not override all of them, only the ones we really need for our use cases. You should make sure though that you save all the necessary information to rebuild your view when you do onPause() or onStop(). Meaning, you need to persist your ids or whatever information you need to ask your repository and rebuild your view on configuration changes (when you rotate screen for example).
+
+``` kotlin
+
+open class BaseActivity : AppCompatActivity() {
+     fun onCreate(savedInstanceState: Bundle?);
+
+     fun onStart();
+
+     fun onRestart();
+
+     fun onResume();
+
+     fun onPause();
+
+     fun onStop();
+
+     fun onDestroy();
+ }
+
+```
+
+An example implementation of a very simple Activity could be as follows:
+
+``` kotlin
+
+class UserDetailActivity : BaseActivity() {
+
+    private lateinit var userId: Long
+    private lateinit var binding: ActivityUserDetailBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        // Databinding related inits
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_user_detail)
+        binding.setLifecycleOwner(this)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+        // Get user from intent
+        userId = intent.getLongExtra("user_id", 1)
+
+        getUser(userId)
+    }
+
+    private fun getUser(userId: Long) {
+        binding.model = getUserWithId(userId)
+        binding.executePendingBindings()
+    }
+
+}
+
+```
+
+
 ## Fragments
+
+To better modularize our code and to build more sophisticated user interfaces for larger screens we make use of the Fragment class. A Fragment represents a behavior or a portion of user interface in an Activity. 
+
 
 ## Between them
 
