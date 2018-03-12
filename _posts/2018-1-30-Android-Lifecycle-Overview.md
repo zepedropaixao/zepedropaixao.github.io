@@ -48,6 +48,7 @@ open class BaseActivity : AppCompatActivity() {
 
 ```
 
+Fot the purposes of this blog, all Android code samples will be in kotlin.
 An example implementation of a very simple Activity could be as follows:
 
 ``` kotlin
@@ -84,6 +85,14 @@ class UserDetailActivity : BaseActivity() {
 ## Fragments
 
 To better modularize our code and to build more sophisticated user interfaces for larger screens we make use of the Fragment class. A Fragment represents a behavior or a portion of user interface in an Activity. 
+
+A Fragment has a lifecycle of its own, but ultimately always respects the parent Activity's lifecycle. Meaning, when the activity pauses, all its fragments pause also, when the activity resumes all its fragments resume also. Likewise when the activity is destroyed, all its fragments are destroyed as well. 
+
+But this doesn't necessarily mean that when a fragment is destroyed, the activity is also destroyed. Fragments can also be instantiated later in the lifecycle of the activity.
+
+
+{% include figure.html url="../assets/imgs/fragment-lifecycle.png" description="Fragment Lifecycle - source: developer.android.com" %}
+
 
 
 ## Between them
