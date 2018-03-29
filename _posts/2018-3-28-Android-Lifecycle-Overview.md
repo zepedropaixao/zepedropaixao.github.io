@@ -1,10 +1,11 @@
 ---
 layout: post
+permalink: /blog/:title/
 title: Android Lifecycle Overview
 breadcrumb: Android Lifecycle
 ---
 
-{% include figure.html url="../assets/imgs/android-lifecycle.jpg" description="The Android Lifecycle defines the programming paradigm" %}
+{% include figure.html url="/assets/imgs/android-lifecycle.jpg" description="The Android Lifecycle defines the programming paradigm" %}
 
 As I ventured into the Android world as a Developer, one of the first things I had to understand was the lifecycle of an Android App.
 
