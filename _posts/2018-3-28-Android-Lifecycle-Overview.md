@@ -25,7 +25,7 @@ The Activity class provides a number of callbacks that allow the activity to kno
 
 
 
-{% include figure.html url="../assets/imgs/activity-lifecycle.png" description="Activity Lifecycle - source: developer.android.com" %}
+{% include figure.html url="/assets/imgs/activity-lifecycle.png" description="Activity Lifecycle - source: developer.android.com" %}
 
 All the lifecycle callbacks are shown in the following code excerpt. All of these are hooks that you can override to do appropriate work when the activity changes state. Normally we do not override all of them, only the ones we really need for our use cases. You should make sure though that you save all the necessary information to rebuild your view when you do onPause() or onStop(). Meaning, you need to persist your ids or whatever information you need to ask your repository and rebuild your view on configuration changes (when you rotate screen for example). If you wanna see the activity lifecycle in action, create a new project and create a new Activity called "MainActivity.kt" like bellow:
 
@@ -112,7 +112,7 @@ A Fragment has a lifecycle of its own, but ultimately always respects the parent
 
 But this doesn't necessarily mean that when a fragment is destroyed, the activity is also destroyed. Fragments can also be instantiated later in the lifecycle of the activity.
 
-{% include figure.html url="../assets/imgs/fragment-lifecycle.png" description="Fragment Lifecycle - source: developer.android.com" %}
+{% include figure.html url="/assets/imgs/fragment-lifecycle.png" description="Fragment Lifecycle - source: developer.android.com" %}
 
 To compelte your code example and for you to check what happens and when, lets create your first Fragment. Create a fragment called "MainFragment.kt" and copy the following code:
 
