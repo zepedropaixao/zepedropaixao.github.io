@@ -3,3 +3,9 @@ Disallow: /
 
 User-agent: Googlebot-Video
 Disallow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Disallow: /
