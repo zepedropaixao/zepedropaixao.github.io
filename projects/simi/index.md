@@ -12,9 +12,9 @@ SIMI is a digital menu for restaurants.
 
 It is available online [here](http://getsimi.com).
 
-The main intent of this product is to help restaurant managers increase their sales by showcasing their dishes with professional photos on a tablet. 
+The main intent of this product is to help restaurant managers increase their sales by showcasing their dishes with professional photos on a tablet.
 
-Everyone eats with their eyes first. 
+Everyone eats with their eyes first.
 
 
 {% include figure.html url="/assets/imgs/simi/white.jpg" description="SIMI, a digital menu for restaurants." %}
@@ -80,7 +80,7 @@ After the initial product was built, we started to contact clients (mostly throu
 
 Although it was nice to see our product finally working in a real client, we identified a lot of mistakes we have made along the way. A lot of adaptations had to be made for real usage of SIMI and to make it easy to transition between the paper menus and the digital ones.
 
-## Company acquisition failure 
+## Company acquisition failure
 
 Really early in the process, the PoS system company that partnered with us started to gain interest in acquiring us. It was the obvious exit. We were completely integrated with them, so suddenly they could sell another product to their already existing clients, and they could easily engage with all their clients with a promotion or a trial, because they already had the means and the channel to offer this kind of deal to all their clients.
 
@@ -100,13 +100,13 @@ To finance the SIMI team we then managed to make a joint-venture with Kaizen Ins
 
 Although we got to a few clients quite fast, the partnership we've built to allow us to scale fast wasn't working as we had expected. The more than 200 resellers we had access to (because of our partnership with the PoS system), were typically technical support companies that were used to installing PoS systems for over 20 years, but had none or little contact with the tablet revolution that was happening at the time. So it was hard to teach them how to use a tablet or even install and configure an app. Besides that, our margins, although quite big in percentage, represented a small part in their monthly income, so it did not motivate them to excel at selling SIMI. Tablet margins were also really small so we couldn't convince them with the hardware that they were going to sell because of SIMI.
 
-Because of this we tried to find other ways to sell massively SIMI and also started to understand that SIMI's main value to the clients was not the operational improvement, but the marketing effect it could generate with curiosity and the increase in sales it provoked for customers that had already gone in, meaning the ticket per meal was becoming greater for tables that in fact used SIMI, thanks to the images and cross selling of wines. 
+Because of this we tried to find other ways to sell massively SIMI and also started to understand that SIMI's main value to the clients was not the operational improvement, but the marketing effect it could generate with curiosity and the increase in sales it provoked for customers that had already gone in, meaning the ticket per meal was becoming greater for tables that in fact used SIMI, thanks to the images and cross selling of wines.
 
 {% include figure.html url="/assets/imgs/simi/golf.jpg" description="SIMI's was valuable as a tool for sales." %}
 
 When we realized that most of the value of the menu was in good professional pictures of the dishes, we realized that photographers also had an interest in the implementation of the SIMI Menu - it was the perfect reason for any restaurant to photograph all the dishes.
 
-Taking this turn to focusing in the selling capabilities of SIMI instead of its operational advantage took us to another level. Photographers are more used to dealing with tablets and knew how to install SIMI. We started to recruit photographers, much like the AirBnB's strategy of having the best pictures of homes, we wanted to have the best pictures of dishes. 
+Taking this turn to focusing in the selling capabilities of SIMI instead of its operational advantage took us to another level. Photographers are more used to dealing with tablets and knew how to install SIMI. We started to recruit photographers, much like the AirBnB's strategy of having the best pictures of homes, we wanted to have the best pictures of dishes.
 
 This pivot was more in the business model and in the way we communicated SIMI rather than the product itself.
 
@@ -130,11 +130,11 @@ Thanks to PizzaHut adhering to SIMI, we got a lot of media exposure:
 
 We even showed up on television:
 
-{% include youtube.html url="https://www.youtube.com/embed/MsILzbeHoaE?rel=0" description="Interview by Porto Canal" %}
+{% include youtube.html url="https://www.youtube.com/embed/MsILzbeHoaE?rel=0" description="Interview by Porto Canal on the 18th of March 2014" %}
 
 ## Exit
 
-Finally, after 4 years of involvement in the SIMI project, it was time for me to let it go and further myself in other projects. I decided to embrace the challenge of entering Infraspeak (know more about it [here]({{ site.base_url }}/projects/infraspeak)). 
+Finally, after 4 years of involvement in the SIMI project, it was time for me to let it go and further myself in other projects. I decided to embrace the challenge of entering Infraspeak (know more about it [here]({{ site.base_url }}/projects/infraspeak)).
 
 We managed to get an exit. A big company in terms of technical support and PoS solutions distribution, with more than 400 clients, acquired SIMI and I still receive royalties for each sale that is made of SIMI.
 
@@ -166,5 +166,3 @@ We built another mobile application that never saw the light of day. It was the 
 {% include figure.html url="/assets/imgs/simi/phone-browse.jpg" %}
 {% include figure.html url="/assets/imgs/simi/phone-list.jpg" %}
 {% include figure.html url="/assets/imgs/simi/phone.jpg" %}
-
-
