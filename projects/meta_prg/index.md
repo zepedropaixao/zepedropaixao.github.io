@@ -18,7 +18,42 @@ This story starts when I was hired to work for Meta.
 
 In November 2018 I was set on changing country, changing jobs and starting my exciting adventure at one of the [FAANG](https://en.wikipedia.org/wiki/Big_Tech) companies. I couldn't believe at that time that it was really happening to me.
 
-{% include figure.html url="/assets/imgs/meta/entrance.jpg" description="Meta HQ (then facebook) in Menlo Park" %}
+When I joined, I had to go through a 6 weeks bootcamp onboarding process (that was amazing and really well thought off). As part of this process I ended up learning all I needed to relating to the Facebook stack and how to ship code at Meta.
+
+Here are some pictures of my first days in office in London:
+
+{% include figure.html url="/assets/imgs/meta/cafeteria.jpg" description="First lunch at the Meta (then Facebook) Rathbone office in London (November 2018)" %}
+{% include figure.html url="/assets/imgs/meta/emojis.jpg" description="Partner Center at the Meta (then Facebook) Brock office in London (November 2018) - this was where I worked on a daily basis" %}
+
+{% include figure.html url="/assets/imgs/meta/insta_background.jpg" description="Instagram office in London" %}
+
+{% include figure.html url="/assets/imgs/meta/instacart.jpg" description="There used to be an Instagram chariot right behind my desk in the London Brock office" %}
+
+{% include figure.html url="/assets/imgs/meta/pingpong.jpg" description="Where we used to play some ping pong" %}
+
+{% include figure.html url="/assets/imgs/meta/work_office.jpg" description="My desk at the London Brock office" %}
+
+After the first couple of weeks, I was flown to Meta HQ (then Facebook) to continue my bootcamp, besides the code stack we also ramped up on the company culture and work style.
+
+Here are some pictures of my first visit to Meta HQ while a bootcamper:
+
+{% include figure.html url="/assets/imgs/meta/entrance.jpg" description="Meta HQ (then facebook) in Menlo Park (December 2018)" %}
+
+{% include figure.html url="/assets/imgs/meta/games_room.jpg" description="Meta HQ (then Facebook) has a games room on the classic campus in Menlo Park (December 2018)" %}
+
+{% include figure.html url="/assets/imgs/meta/hired_for_brain.jpg" description="We biked from building to building at Meta HQ, here is what is says on the inside of the bicycle basket (December 2018)" %}
+
+{% include figure.html url="/assets/imgs/meta/bootcampers.jpg" description="Bootcampers having breakfast at classic campus (used to be the Sun Microsystems HQ before becoming Meta's HQ)" %}
+
+{% include figure.html url="/assets/imgs/meta/meta_hug.jpg" description="As part of onboarding we had to replicate pictures Mark Zuckerberg had taken, this one was on Classic Campus at Meta HQ" %}
+
+{% include figure.html url="/assets/imgs/meta/alcatraz.jpg" description="Alcatraz Island visit while in San Francisco for Bootcamp (December 2018)" %}
+
+{% include figure.html url="/assets/imgs/meta/golden_gate.jpg" description="Quick stop to see the Golden Gate Bridge (December 2018)" %}
+
+{% include figure.html url="/assets/imgs/meta/muir_woods.jpg" description="Visiting the amazing sequoia tree's forest of Muir Woods (December 2018)" %}
+
+
 
 I had a very uncommon path up until then: I wasn't the best student at university and I think that because of it I was more prone to risk when I started my professional career. I started as a researcher just to quickly realize I wanted to build things instead. This leads me to building 2 startups and being the first employee of another. 
 
@@ -74,7 +109,13 @@ We did an in-depth analysis of their platform and decided not to leverage it and
 
 # My contribution to Partner Reports
 
-As one of the first 3 volunteers on this project, I took part in defining how it would be setup
+As one of the first 3 volunteers on this project, I took part in defining how it would be setup.
+Besides taking part in all major engineering decisions across the board, I ended up originally owning the exporter layer which I will detail further bellow. Throughout the evolution of the project, because I was interacting directly with new teams onboarding onto Partner Reports, I ended up owning all the scope of the project and became the de-facto tech-lead and go-to person for it.
+
+Besides the technical responsibilities, I also detailed a thorough onboarding guide wiki for new teams / developers to use. I then used it to on-board new hires of our own team, to be able to understand which parts were more prone to questions to improve the wiki itself. 
+I effectively on-boarded all the new teams working on Partner Reports and studied where teams where investing most of their times, with the intent of optimizing the platform itself. This ended up leading me to develop a new project called Partner Metrics that I talk about [here](https://www.google.com).
+
+{% include figure.html url="/assets/imgs/meta/prg_dinner.jpg" description="Early-days picture of a dinner with the PRG (Partner Reports Generator) team (and friends)" %}
 
 ## First technical challenges
 
@@ -83,15 +124,19 @@ As one of the first 3 volunteers on this project, I took part in defining how it
 
 # Success
 
-People used to say that currency at Meta was headcount. The more people the business would invest in your team, the more signal you would get that your strategy was being successful.
+At Meta we used to say that headcount was currency. The more people the company would invest in your team, the clearer the signal that your strategy was being successful.
+
+In the first couple of years we grew from 3 to roughly 5 and then we grew exponentially to 40+ engineers.
 
 We got to heavily multiply our team and we became the fastest growing team within the Partnerships Organization because we were successful with the first version and the consequent new reports that kept being added by other software engineering teams.
 
-
+With this investment we gained a new identity: the CSDT team (Central Systems and Data Tools team). This was the period I most enjoyed while working at Meta, and probably of my whole career up to this point.
 
 ## CSDT
 
-As a direct consequence of out inital work (remember: 3 engineers and 1 manager) we were able to start a new Organization called CSDT within Meta (Central Systems and Data Tools team)
+As a direct consequence of out inital work (remember: 3 engineers and 1 manager) we were able to start a new Organization called CSDT within Meta (Central Systems and Data Tools team).
+
+
 
 # Technical Solution
 
