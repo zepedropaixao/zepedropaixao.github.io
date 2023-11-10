@@ -228,7 +228,7 @@ a {
 
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .project-name {
-      font-size: 1.70rem;
+      font-size: 1.65rem;
     }
 
     .btn {
@@ -242,13 +242,13 @@ a {
     
   }
 
-  
-
-
-
-
-
-  .float-left img {
-    margin-right: 50px;
+  .float-right {
+    margin-left: 50px;
   }
+
+  @media (max-width: 812px){
+    .float-right {
+        margin-left: 0px;
+    }
+}
   

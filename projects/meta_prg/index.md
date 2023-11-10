@@ -96,20 +96,19 @@ We found a similar project that had started a few time before we looked into the
 We did an in-depth analysis of their platform and decided not to leverage it and instead build a new one from scratch as it had some limitations that were blockers for us:
 - it was built outside of our internal network, meaning we would not be able to source insights directly without exporting them outside of intern (security risk for us)
 - each template could only be used to generate one report type (their approach didn't allow to dynamically adding / removing slides according to the report)
-- the system was designed to scale with their team, as they had an extensive contractor team available to manually produce each new report (instead of leveraging other engineering teams to add reports) - so it wasn't built in a way that other engineers could leverage
-- they way they were sourcing data was hardcoded, meaning for each new report an engineer had to code sourcing all the data all over again, even if from the same data sources
+- the system was designed to scale with their team, as they had an extensive contractor team available to manually produce each new report (instead of leveraging other internal engineering teams to add reports) - so it wasn't built in a way that other engineers could leverage
+- the way they were sourcing data was hardcoded, meaning for each new report an engineer had to code sourcing all the data all over again, even if from the same data sources
 
+We wanted to build a platform system that:
+- would enable us to scale by leveraging other teams work (business engineering teams adding reports)
+- would enable everyone to avoid repeating the same work all over again (templates and "data providers" that are reusable in other reports)
+- that would live in our internal network so we could source internal data sources directly without externalizing any data
 
-
-
-
-
-
-
+This is how Partner Reports was born.
 
 # My contribution to Partner Reports
 
-As one of the first 3 volunteers on this project, I took part in defining how it would be setup.
+As one of the first 3 volunteers on this project, I got to help define how it would be setup.
 Besides taking part in all major engineering decisions across the board, I ended up originally owning the exporter layer which I will detail further bellow. Throughout the evolution of the project, because I was interacting directly with new teams onboarding onto Partner Reports, I ended up owning all the scope of the project and became the de-facto tech-lead and go-to person for it.
 
 Besides the technical responsibilities, I also detailed a thorough onboarding guide wiki for new teams / developers to use. I then used it to on-board new hires of our own team, to be able to understand which parts were more prone to questions to improve the wiki itself. 
@@ -117,10 +116,75 @@ I effectively on-boarded all the new teams working on Partner Reports and studie
 
 {% include figure.html url="/assets/imgs/meta/prg_dinner.jpg" description="Early-days picture of a dinner with the PRG (Partner Reports Generator) team (and friends)" %}
 
-## First technical challenges
+## Clients / Users define our roadmap
+
+We worked right next to the business people that belonged to the partnerships organization in the London Brock Street office. We were literally sitting right next to the people that were our target using the first 2 reports we were developing (the Facebook QBR and the Instagram CPR).
+
+This was great as it enabled us to test and iterate quickly with our first 2 reports.
+
+We had no middle layer between us and our users, which proved extremely useful to attain market-fit at record speed.
+
+We had a great fit and because we involved these people in building these reports, they became champions for our platform with other teams across the company globally.
+
+# Technical Solution
+
+At this point we were just 3 engineers and each one took part in building developing one of the layers:
+- Data Layer
+- Aggregation Layer (later deprecated)
+- Export Layer
+
+We quickly understood that the Aggregation layer was a counter productive layer.
+
+If we source data in a standard way, it should the data providers getting data given a certain input. The data providers aggregate data the way they need (with time aggregations that are convenient and filters / breakdowns according to the use case).
+
+So I'll focus on these 2 layers, Data Layer and Export Layer. Each report also had an orchestrator class to join all these data providers with their respective output layers.
+
+All of these layers and capabilities had to be tackled from scratch so we ended up having to deal with a lot of issues.
+
+## Data Layer
+
+The whole data layer later evolved into a new product that we called Partner Metrics that standardized data sourcing across the sales organization and overall company internal needs.
+
+But the base premise that led to its existence was: we need a consistent way to source data and reuse the code we write for any number of reports we may need to produce as a lot of these metrics were being reused in other reports, just with a slightly different take or breakdown for a different analysis.
+
+With that in mind we created originally something we called "Data Providers" that needed to spit out data in a consistent format. This consistent format enabled us to specify a "language" that was common so the data providers could send data to different reports or slides consistently.
+
+With this consistent output we were able to add a bunch of automation on top.
+Some of note are the charting framework (which I talk more about below) and what we called the data-quality health checks:
+- we would create a sample output for a data provider with a given input (time frame, time aggregation, breakdown and filter)
+- we would store it in a safe internal JSON format
+- we would periodically (chronos job) run a job to assert that the output was still consistent
+
+This would at least heal us catch immediately if a metric changed for a given past period - which should never happen.
+
+## Export Layer
+
+The export layer was built in a way that enabled us to ignore the actual export file / type. We developed a language and an internal framework to render slide decks (PowerPoint) that developers could leverage, but they didn't have to, we developed other export types (like CSV transformers, JSON encoders, etc) that would enable developers to export data in different formats.
+
+## Charts
+
+We also had to develop ways to generate plots / charts that would illustrate business insights in a safe manner. We opted for generating pictures that we then embedded into the PowerPoint decks instead of generating native charts so we could avoid sharing the raw data with any partner / client and so that we could also enforce a narrative without enabling business people to change the chart and content of it.
 
 
-## Clients define our roadmap
+## PPTX Export
+
+
+## Privacy and Security Compliance
+
+We leveraged internal infrastructure which was great to enable us to easily be compliant in terms of privacy and security. Between other considerations, as an example all the generated reports had a time to live in our blob storages, automatically deleting after a certain period. Also, for example, we could only generate reports for entities that were effectively enrolled in our Partnerships / Sales programs.
+
+## Putting it all together
+
+As mentioned before, because the Data Layer was responsible for delivering data in a consistent output format agnostic from its UI usage, and the Export Layer was supposed to be able to render a PPTX slide deck from a configuration, we needed an orchestrator class to put all of these data pulls and render configurations into one place.
+
+This was the responsibility of the orchestrator class, which was just: pulling data and then sending it to chart generation utils and pushing them to the final slide with the proper narrative and context in text / pictures around it.
+
+
+## From Hardcode to Configuration Based
+
+## Management Tool
+
+## Time spent to deliver a new report and follow ups
 
 # Success
 
@@ -138,14 +202,4 @@ As a direct consequence of out inital work (remember: 3 engineers and 1 manager)
 
 
 
-# Technical Solution
 
-## Data Layer
-
-## Presentation Layer
-
-## Putting it all together
-
-## Time spent to deliver a new report and follow ups
-
-## Management Tool
