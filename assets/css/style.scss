@@ -24,10 +24,56 @@ $brand-color:      #155799;
 @import "{{ site.theme }}";
 
 .page-header {
-    /*background: none;
-    background-color:#A9A9A9;*/
+    background: none;
+    background-color:#f1f0ee;
+    color: #786a64;
     padding: 0 !important;
 }
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #b1a99d;
+}
+
+.btn {
+    color: #786a64b6;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: #786a64b6;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  }
+  .btn:hover {
+    color: #786a64;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-width: 2px;
+    border-color: #786a64;
+  }
+
+
+a {
+    color: #a37263;
+  }
+
+  .breadcrumb a {
+    color: #a37263;
+  }
+  
+  .breadcrumb a:hover {
+    color: #b1a99d;
+  }
+  
+  .breadcrumb > .active a {
+    color: #606c71;
+  }
+  
+  .breadcrumb > li + li:before {
+    color: #a37263;
+    content: "\003E\00a0";
+  }
 
 .header-container {
     display: inline-flex;
@@ -173,3 +219,15 @@ $brand-color:      #155799;
 .card img {
     border-radius: 5px 5px 0 0;
 }
+
+@media screen and (min-width: 64em) {
+    .project-name {
+      font-size: 2.75rem;
+    }
+  }
+
+
+  .float-left img {
+    margin-right: 50px;
+  }
+  
