@@ -226,6 +226,27 @@ a {
     }
   }
 
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-name {
+      font-size: 1.70rem;
+    }
+
+    .btn {
+        padding: 0.6rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .btn + .btn {
+        margin-left: 0.2rem;
+    }
+    
+  }
+
+  
+
+
+
+
 
   .float-left img {
     margin-right: 50px;
