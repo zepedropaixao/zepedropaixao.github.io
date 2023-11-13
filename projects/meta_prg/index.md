@@ -161,12 +161,25 @@ This would at least heal us catch immediately if a metric changed for a given pa
 
 The export layer was built in a way that enabled us to ignore the actual export file / type. We developed a language and an internal framework to render slide decks (PowerPoint) that developers could leverage, but they didn't have to, we developed other export types (like CSV transformers, JSON encoders, etc) that would enable developers to export data in different formats.
 
-## Charts
+
+### Video Report
+
+Because of its flexibility, we developed a Video Report using a technology called React Media (developed internally). This technology enabled us to code videos and render them live in react. 
+
+I initially built it in a hackathon with [Pauli Ojala](https://github.com/pojala) (thanks Pauli for being so keen in making this happen!) - the original idea was to produce reports similar to the Spotify Year in review report - video reports that could have different endings according to the insights of each partner / client. 
+
+We ended up using this video report technology on a real MCD (partnerships organization team responsible for smaller creators that do not have a dedicated account manager) Marketing campaign, reaching 150K+ creators with it in app (Facebook app) attaining never seen before engagement (comparing to the typical email campaign that most creators just dismiss).
+
+### Charts
 
 We also had to develop ways to generate plots / charts that would illustrate business insights in a safe manner. We opted for generating pictures that we then embedded into the PowerPoint decks instead of generating native charts so we could avoid sharing the raw data with any partner / client and so that we could also enforce a narrative without enabling business people to change the chart and content of it.
 
 
-## PPTX Export
+### PPTX Export
+
+We developed a complete language to specify a powerpoint deck slide. Essentially, with code, developers using our framework were able to specify a new text box inside a slide by passing X,Y coordinates and a text along with text transformations (like bold, italic, underline) and font configurations (like font, size, color, etc). We had also the capability to add pictures to a slide and scale / place them wherever we needed using just code.
+
+This was probably the most used type of export.
 
 
 ## Privacy and Security Compliance
@@ -182,7 +195,13 @@ This was the responsibility of the orchestrator class, which was just: pulling d
 
 ## From Hardcode to Configuration Based
 
+After we had this technology up and running for the first reports, we started having many teams adding their own reports onto it.
+
+Originally each report had to add their own entry to the list of reports manually for this to work. After a while we "entified" the whole configuration ("entified" is a term we used internally to represent creating entities, or modelling them as objects that would store the configurations needed, instead of coding them in a hardcoded list). Once the whole configuration was modeled and we migrated the existing reports into it, we were able to provide much better insights and controls to each report type.
+
 ## Management Tool
+
+
 
 ## Time spent to deliver a new report and follow ups
 
@@ -196,9 +215,20 @@ We got to heavily multiply our team and we became the fastest growing team withi
 
 With this investment we gained a new identity: the CSDT team (Central Systems and Data Tools team). This was the period I most enjoyed while working at Meta, and probably of my whole career up to this point.
 
+## Numbers
+
+We ended up having 16+ different teams add their own reports to the Platform and once we release Live Reports (which I'll talk about in another article) we ended up having hundreds of reports leveraging this same technology.
+
+Overall, when writing this article this technology had already been responsible for an estimated $75M+ savings calculated given the time we saved our users from having to produce these reports manually as before.
+
 ## CSDT
 
-As a direct consequence of out inital work (remember: 3 engineers and 1 manager) we were able to start a new Organization called CSDT within Meta (Central Systems and Data Tools team).
+As a direct consequence of out initial work (remember: 3 engineers and 1 manager) we were able to start a new Organization called CSDT within Meta (Central Systems and Data Tools team).
+
+
+
+{% include figure.html url="/assets/imgs/meta/csdt.jpg" description="CSDT team swag backpack" %}
+
 
 
 
