@@ -201,9 +201,11 @@ Originally each report had to add their own entry to the list of reports manuall
 
 ## Management Tool
 
-
+Once we moved everything from a hardcoded configuration into a model we were able to build an internal back-office for developers to manage their reports. Along side normal day-to-day management features, like disabling the report or changing its name of Point of Contact, we also enabled some debugging features (where we gave visibility of failed reports for report admins) and also some insights for performance tracking.
 
 ## Time spent to deliver a new report and follow ups
+
+By onboarding the first developer teams into Partner Reports, I took notice of what task was taking the longest to overcome when adding a new report. I quickly realized that developers were using more than 80% of their time figuring out the data layer part.
 
 # Success
 
