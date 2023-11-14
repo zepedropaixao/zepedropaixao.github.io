@@ -29,11 +29,11 @@ Here are some pictures of my first days in office in London:
 
 {% include figure.html url="/assets/imgs/meta/instacart.jpg" description="There used to be an Instagram chariot right behind my desk in the London Brock office" %}
 
-{% include figure.html url="/assets/imgs/meta/pingpong.jpg" description="Where we used to play some ping pong" %}
+{% include figure.html url="/assets/imgs/meta/pingpong.jpg" description="Where I used to play some ping pong" %}
 
 {% include figure.html url="/assets/imgs/meta/work_office.jpg" description="My desk at the London Brock office" %}
 
-After the first couple of weeks, I was flown to Meta HQ (then Facebook) to continue my bootcamp, besides the code stack we also ramped up on the company culture and work style.
+After the first couple of weeks, I was flown to Meta HQ (then Facebook) to continue my bootcamp, besides the code stack I also ramped up on the company culture and work style.
 
 Here are some pictures of my first visit to Meta HQ while a bootcamper:
 
@@ -45,7 +45,7 @@ Here are some pictures of my first visit to Meta HQ while a bootcamper:
 
 {% include figure.html url="/assets/imgs/meta/bootcampers.jpg" description="Bootcampers having breakfast at classic campus (used to be the Sun Microsystems HQ before becoming Meta's HQ)" %}
 
-{% include figure.html url="/assets/imgs/meta/meta_hug.jpg" description="As part of onboarding we had to replicate pictures Mark Zuckerberg had taken, this one was on Classic Campus at Meta HQ" %}
+{% include figure.html url="/assets/imgs/meta/meta_hug.jpg" description="As part of onboarding I had to replicate pictures Mark Zuckerberg had taken, this one was on Classic Campus at Meta HQ" %}
 
 {% include figure.html url="/assets/imgs/meta/alcatraz.jpg" description="Alcatraz Island visit while in San Francisco for Bootcamp (December 2018)" %}
 
@@ -65,17 +65,17 @@ Before this, people typically didn't care much about their privacy and likewise,
 
 Shortly after joining Meta, all internal business employees lost access to all data tools, from one moment to the other - including people who needed to use them on a daily-basis to be able to manually produce slide decks (like quarterly business reviews or QBRs) with insights to have constructive conversations with partners / clients.
 
-So it became a top priority for the company to provide them with the same insights without re-enabling access to these data tools. Having access to these data tools directly and building their own slide decks was prone to human error, and we needed to make sure our insights matched those of our partners / clients and were consistent across reports. Our biggest partners (like Disney) are extremely professional with understanding their usage numbers and engagement numbers, we need to provide insights at the same quality they are used to.
+So it became a top priority for the company to provide them with the same insights without re-enabling access to these data tools. Having access to these data tools directly and building their own slide decks was prone to human error, and as a company we needed to make sure our insights matched those of our partners / clients and were consistent across reports. Our biggest partners (like Disney) are extremely professional with understanding their usage numbers and engagement numbers, we need to provide insights at the same quality they are used to.
 
 I volunteered to solve this problem, and along with 2 other engineers and my manager, we were the founding team of what was to become the CSDT team - Central Systems and Data Tools team. This team eventually grew and merged with another team to become a 300+ people organization. 
 
-The very first problem we were tasked to tackle led to the development of the Partner Reports platform. 
+The very first problem I was tasked to tackle led to the development of the Partner Reports platform. 
 
 It felt like working on a startup again, but this time with an incomparable level of impact and a solid wage at the end of the month!
 
 # Deciding to build a new platform
 
-To my surprise, we didn't have already a unified platform to generate business reports automatically.
+To my surprise, the company didn't have already a unified platform to generate business reports automatically.
 
 When we were first tasked to solve this problem we just had to build 2 business reports:
 - the Facebook QBR (Quarterly Business Review);
@@ -86,12 +86,12 @@ The result for these 2 reports needed to be essentially 2 slide decks. Both woul
 
 {% include figure.html url="/assets/imgs/meta/qbr.png" description="Illustration of a QBR meeting presentation" %}
 
-Even though we only had 2 reports to build as a top priority as of that moment, we knew the other 20+ business verticals (examples could be the Platform-Partnerships Team, Workplace Team, WhatsApp for Business Team, etc...) would also need to produce similar reports and we were a team of just 3 engineers, we would not be able to scale fast enough to support all the business verticals by making each report itself manually. 
-So we focused on building a platform that would instead enable other engineering teams to work on top of and produce business reports as fast as possible.
+Even though I only had 2 reports to build as a top priority as of that moment, I knew the other 20+ business verticals (examples could be the Platform-Partnerships Team, Workplace Team, WhatsApp for Business Team, etc...) would also need to produce similar reports and we were a team of just 3 engineers, we would not be able to scale fast enough to support all the business verticals by making each report itself manually. 
+So I focused on building a platform that would instead enable other engineering teams to work on top of and produce business reports as fast as possible.
 
 Before investing in building a completely new platform to generate these reports, we looked to other teams / projects at Meta to find out if anything like this was ever built so that we could leverage it to speed up our goals.
 
-We found a similar project that had started a few time before we looked into the same problem. Our sister team in Sales had decided to build a platform to generate reports that was supported by a team in Hyderabad, India.
+We found a similar project that had started some time before us tackling the same problem. Our sister team in Sales had decided to build a platform to generate reports that was supported by a team in Hyderabad, India.
 
 We did an in-depth analysis of their platform and decided not to leverage it and instead build a new one from scratch as it had some limitations that were blockers for us:
 - it was built outside of our internal network, meaning we would not be able to source insights directly without exporting them outside of intern (security risk for us)
@@ -118,11 +118,11 @@ I effectively on-boarded all the new teams working on Partner Reports and studie
 
 ## Clients / Users define our roadmap
 
-We worked right next to the business people that belonged to the partnerships organization in the London Brock Street office. We were literally sitting right next to the people that were our target using the first 2 reports we were developing (the Facebook QBR and the Instagram CPR).
+I worked right next to the business people that belonged to the partnerships organization in the London Brock Street office. I was literally sitting right next to the people that were our target using the first 2 reports that we were developing (the Facebook QBR and the Instagram CPR).
 
 This was great as it enabled us to test and iterate quickly with our first 2 reports.
 
-We had no middle layer between us and our users, which proved extremely useful to attain market-fit at record speed.
+Having no middle layer between us and our users proved extremely useful to attain market-fit at record speed.
 
 We had a great fit and because we involved these people in building these reports, they became champions for our platform with other teams across the company globally.
 
@@ -133,29 +133,32 @@ At this point we were just 3 engineers and each one took part in building develo
 - Aggregation Layer (later deprecated)
 - Export Layer
 
-We quickly understood that the Aggregation layer was a counter productive layer.
+I quickly understood that the Aggregation layer was a counter productive layer.
 
 If we source data in a standard way, it should the data providers getting data given a certain input. The data providers aggregate data the way they need (with time aggregations that are convenient and filters / breakdowns according to the use case).
 
 So I'll focus on these 2 layers, Data Layer and Export Layer. Each report also had an orchestrator class to join all these data providers with their respective output layers.
 
-All of these layers and capabilities had to be tackled from scratch so we ended up having to deal with a lot of issues.
+All of these layers and capabilities had to be tackled from scratch so I ended up having to deal with a lot of issues.
 
 ## Data Layer
 
-The whole data layer later evolved into a new product that we called Partner Metrics that standardized data sourcing across the sales organization and overall company internal needs.
+The whole data layer later evolved into a new product that I called Partner Metrics that standardized data sourcing across the sales organization and overall company internal needs.
 
-But the base premise that led to its existence was: we need a consistent way to source data and reuse the code we write for any number of reports we may need to produce as a lot of these metrics were being reused in other reports, just with a slightly different take or breakdown for a different analysis.
+But the base premise that led to its existence was: as a company we need a consistent way to source data and reuse the code we write for any number of reports we may need to produce as a lot of these metrics were being reused in other reports, just with a slightly different take or breakdown for a different analysis.
 
 With that in mind we created originally something we called "Data Providers" that needed to spit out data in a consistent format. This consistent format enabled us to specify a "language" that was common so the data providers could send data to different reports or slides consistently.
 
 With this consistent output we were able to add a bunch of automation on top.
-Some of note are the charting framework (which I talk more about below) and what we called the data-quality health checks:
-- we would create a sample output for a data provider with a given input (time frame, time aggregation, breakdown and filter)
-- we would store it in a safe internal JSON format
-- we would periodically (chronos job) run a job to assert that the output was still consistent
 
-This would at least heal us catch immediately if a metric changed for a given past period - which should never happen.
+Some of note are the charting framework (which I talk more about below) and the data-quality health checks - these tests were crucial to asserting the quality of our metrics at all times. 
+
+These tests worked something like this:
+1. Create a sample output for a data provider with a given input (time frame, time aggregation, breakdown and filter)
+2. Store it in a safe internal JSON format
+3. Periodically (chronos job) run a job to assert that the output was still consistent
+
+This would at least help us catch immediately if a metric changed for a given past period - which should never happen.
 
 ## Export Layer
 
@@ -206,6 +209,12 @@ Once we moved everything from a hardcoded configuration into a model we were abl
 ## Time spent to deliver a new report and follow ups
 
 By onboarding the first developer teams into Partner Reports, I took notice of what task was taking the longest to overcome when adding a new report. I quickly realized that developers were using more than 80% of their time figuring out the data layer part.
+
+So I decided to figure out a way to cut development time of new reports on our platform, by focusing on improving the data sourcing problem.
+Data at Meta is broken in many different data platforms, that exist for different purposes.
+
+
+TODO TALK ABOUT HOW BROAD THE PROBLEM IS AND HOW WE COULD IMPROVE IT
 
 # Success
 
