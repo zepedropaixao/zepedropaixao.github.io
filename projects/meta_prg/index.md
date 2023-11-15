@@ -41,7 +41,7 @@ Here are some pictures of my first visit to Meta HQ while a bootcamper:
 
 {% include figure.html url="/assets/imgs/meta/games_room.jpg" description="Meta HQ (then Facebook) has a games room on the classic campus in Menlo Park (December 2018)" %}
 
-{% include figure.html url="/assets/imgs/meta/hired_for_brain.jpg" description="We biked from building to building at Meta HQ, here is what is says on the inside of the bicycle basket (December 2018)" %}
+{% include figure.html url="/assets/imgs/meta/hired_for_brain.jpg" description="Biking from building to building at Meta HQ, here is what it says on the inside of the bicycle basket (December 2018)" %}
 
 {% include figure.html url="/assets/imgs/meta/bootcampers.jpg" description="Bootcampers having breakfast at classic campus (used to be the Sun Microsystems HQ before becoming Meta's HQ)" %}
 
@@ -162,27 +162,31 @@ This would at least help us catch immediately if a metric changed for a given pa
 
 ## Export Layer
 
-The export layer was built in a way that enabled us to ignore the actual export file / type. We developed a language and an internal framework to render slide decks (PowerPoint) that developers could leverage, but they didn't have to, we developed other export types (like CSV transformers, JSON encoders, etc) that would enable developers to export data in different formats.
+The export layer was built in a way that enabled us to ignore the actual export file / type. I developed a language and an internal framework to render slide decks (PowerPoint) that developers could leverage, but they didn't have to, I developed other export types (like CSV transformers, JSON encoders, etc) that would enable developers to export data in different formats.
 
 
-### Video Report
-
-Because of its flexibility, we developed a Video Report using a technology called React Media (developed internally). This technology enabled us to code videos and render them live in react. 
-
-I initially built it in a hackathon with [Pauli Ojala](https://github.com/pojala) (thanks Pauli for being so keen in making this happen!) - the original idea was to produce reports similar to the Spotify Year in review report - video reports that could have different endings according to the insights of each partner / client. 
-
-We ended up using this video report technology on a real MCD (partnerships organization team responsible for smaller creators that do not have a dedicated account manager) Marketing campaign, reaching 150K+ creators with it in app (Facebook app) attaining never seen before engagement (comparing to the typical email campaign that most creators just dismiss).
 
 ### Charts
 
-We also had to develop ways to generate plots / charts that would illustrate business insights in a safe manner. We opted for generating pictures that we then embedded into the PowerPoint decks instead of generating native charts so we could avoid sharing the raw data with any partner / client and so that we could also enforce a narrative without enabling business people to change the chart and content of it.
+I also had to develop ways to generate plots / charts that would illustrate business insights in a safe manner. I opted for generating pictures that were then embedded into the PowerPoint decks instead of generating native charts so this way I could avoid sharing the raw data with any partner / client. That enabled us to also enforce a narrative without enabling business people to change the chart and content of it.
 
 
 ### PPTX Export
 
-We developed a complete language to specify a powerpoint deck slide. Essentially, with code, developers using our framework were able to specify a new text box inside a slide by passing X,Y coordinates and a text along with text transformations (like bold, italic, underline) and font configurations (like font, size, color, etc). We had also the capability to add pictures to a slide and scale / place them wherever we needed using just code.
+I developed a complete language to specify a powerpoint deck slide. Essentially, with code, developers using our framework were able to specify a new text box inside a slide by passing X,Y coordinates and a text along with text transformations (like bold, italic, underline) and font configurations (like font, size, color, etc). I also added the capability to embed pictures in a slide and scale / place them wherever they were needed using just code.
+
+Developers could also easily add new PowerPoint templates and use them across different reports that would share the same look and feel (like the Facebook or Instagram default templates).
 
 This was probably the most used type of export.
+
+
+### Video Report
+
+Because of the export layer's flexibility, I developed a Video Report using a technology called React Media (developed internally). This technology enabled us to code videos and render them live in react. 
+
+I initially built it in a hackathon with [Pauli Ojala](https://github.com/pojala) (thanks Pauli for being so keen in making this happen!) - the original idea was to produce reports similar to the Spotify Year in review report - video reports that could have different endings according to the insights of each partner / client. 
+
+I ended up using this video report technology on a real MCD (partnerships organization team responsible for smaller creators that do not have a dedicated account manager) Marketing campaign, reaching 150K+ creators with it in app (Facebook app) attaining never seen before engagement (comparing to the typical email campaign that most creators just dismiss).
 
 
 ## Privacy and Security Compliance
@@ -213,8 +217,13 @@ By onboarding the first developer teams into Partner Reports, I took notice of w
 So I decided to figure out a way to cut development time of new reports on our platform, by focusing on improving the data sourcing problem.
 Data at Meta is broken in many different data platforms, that exist for different purposes.
 
+* Some data platforms are slower to query and have less daily shards available, but because they were built for data analysis they enable complex joins of data a lot of inferences can be made from these data structures at the cost of speed. These metrics were called "offline metrics" as they were typically for internal work and not for consumers to have access to.
+* Some other data structures and APIs were much faster, enabled longer time bucket comparisons but because they were built to power some consumer based insights surfaces (like Instagram in-app insights panel for creators) they didn't allow for complex joins or any new inferences in the data as they tended to be already consolidated metrics ready for consumption and already externalized (went through thorough reviews before being made available). These metric were called internally as "online metrics" as they were typically available to creators / clients / partners. When building reports that were meant to be shared with clients / partners we needed to make sure our data matched the metrics our clients already had access to.
 
-TODO TALK ABOUT HOW BROAD THE PROBLEM IS AND HOW WE COULD IMPROVE IT
+Taking all these systems into consideration it was obvious then that I needed to build a middle layer that would unify all these different data formats under a consistent output format so I could scale new reports being added to the reporting platform:
+
+This is how Partner Metrics came to be, I talk about that project on another article [here]{www.google.com}.
+
 
 # Success
 
