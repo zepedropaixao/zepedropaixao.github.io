@@ -8,6 +8,7 @@ breadcrumb: Projects
 
 <div class="grid-container">
 
+{% include card.html url="meta_prg" img_url="/assets/imgs/meta/background_meta_prg.jpg" title="Meta Partner Reports" description="Business Insights Reporting Platform" %}
 
 {% include card.html url="infraspeak" img_url="/assets/imgs/infraspeak/background.jpg" title="Infraspeak" description="Smart Technical Assistance" %}
 

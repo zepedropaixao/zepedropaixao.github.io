@@ -61,15 +61,13 @@ But this was exactly what Meta was looking for, someone with a strong technical 
 
 When I joined Meta, it was at a very special time. People where starting to become extremely aware of their privacy and Meta had just undergone the  [Cambridge Analytica Data Scandal](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal). 
 
-Before this, people typically didn't care much about their privacy and likewise, Meta didn't invest too much into it as it wasn't a problem people wanted solved. But at this pivotal moment in time, Meta was deeply invested in changing everything towards a privacy first approach for every product they built, and that included all internal systems. Also after the FTC agreement that Meta reached as a consequence of the scandals, implied Meta needed to think much more about user privacy and consent upfront and every step of the way.
+Before this, people typically didn't care much about their privacy and likewise, Meta didn't invest too much into it as it wasn't a problem people wanted solved. But at this pivotal moment in time, Meta was deeply invested in changing everything towards a privacy first approach for every product they built, and that included all internal systems. Also after the [FTC agreement](https://about.fb.com/news/2020/04/final-ftc-agreement/) that Meta reached as a consequence of the scandals, implied Meta needed to think much more about user privacy and consent upfront and every step of the way.
 
-Shortly after joining Meta, all internal business employees lost access to all data tools, from one moment to the other - including people who needed to use them on a daily-basis to be able to manually produce slide decks (like quarterly business reviews or QBRs) with insights to have constructive conversations with partners / clients.
-
-So it became a top priority for the company to provide them with the same insights without re-enabling access to these data tools. Having access to these data tools directly and building their own slide decks was prone to human error, and as a company we needed to make sure our insights matched those of our partners / clients and were consistent across reports. Our biggest partners (like Disney) are extremely professional with understanding their usage numbers and engagement numbers, we need to provide insights at the same quality they are used to.
+Shortly after joining Meta, due to this FTC agreement, it suddenly became a top priority for the company to provide insights in a privacy aware and secure way consistently to all business colleagues. We needed to make sure our insights matched those of our partners / clients and were consistent across reports. Our biggest partners (like Disney) are extremely professional with understanding their usage numbers and engagement numbers, we needed to provide insights at the same quality they are used to.
 
 I volunteered to solve this problem, and along with 2 other engineers and my manager, we were the founding team of what was to become the CSDT team - Central Systems and Data Tools team. This team eventually grew and merged with another team to become a 300+ people organization. 
 
-The very first problem I was tasked to tackle led to the development of the Partner Reports platform. 
+The very first problem I tackled led to the development of the Partner Reports platform. 
 
 It felt like working on a startup again, but this time with an incomparable level of impact and a solid wage at the end of the month!
 
@@ -86,7 +84,7 @@ The result for these 2 reports needed to be essentially 2 slide decks. Both woul
 
 {% include figure.html url="/assets/imgs/meta/qbr.png" description="Illustration of a QBR meeting presentation" %}
 
-Even though I only had 2 reports to build as a top priority as of that moment, I knew the other 20+ business verticals (examples could be the Platform-Partnerships Team, Workplace Team, WhatsApp for Business Team, etc...) would also need to produce similar reports and we were a team of just 3 engineers, we would not be able to scale fast enough to support all the business verticals by making each report itself manually. 
+Even though I only had 2 reports to build as a top priority as of that moment, I knew the other 20+ business verticals (examples could be the Platform-Partnerships Team, Workplace Team, WhatsApp for Business Team, etc...) would also need to produce similar reports and we were a team of just 3 engineers, we would not be able to scale fast enough to support all the business verticals by implementing each report manually. 
 So I focused on building a platform that would instead enable other engineering teams to work on top of and produce business reports as fast as possible.
 
 Before investing in building a completely new platform to generate these reports, we looked to other teams / projects at Meta to find out if anything like this was ever built so that we could leverage it to speed up our goals.
@@ -128,14 +126,14 @@ We had a great fit and because we involved these people in building these report
 
 # Technical Solution
 
-At this point we were just 3 engineers and each one took part in building developing one of the layers:
+At this point we were just 3 engineers and each one took part in developing one of the layers:
 - Data Layer
 - Aggregation Layer (later deprecated)
 - Export Layer
 
 I quickly understood that the Aggregation layer was a counter productive layer.
 
-If we source data in a standard way, it should the data providers getting data given a certain input. The data providers aggregate data the way they need (with time aggregations that are convenient and filters / breakdowns according to the use case).
+If we source data in a standardized way, it should the data providers getting all data, in a consistent format, given a certain input. The data providers aggregate data the way they need according to the input (with time aggregations that are convenient and filters / breakdowns according to the use case).
 
 So I'll focus on these 2 layers, Data Layer and Export Layer. Each report also had an orchestrator class to join all these data providers with their respective output layers.
 
@@ -151,9 +149,9 @@ With that in mind we created originally something we called "Data Providers" tha
 
 With this consistent output we were able to add a bunch of automation on top.
 
-Some of note are the charting framework (which I talk more about below) and the data-quality health checks - these tests were crucial to asserting the quality of our metrics at all times. 
+Some of the automation we ended up working on are: the charting framework (which I talk more about below) and the data-quality health checks - these tests were crucial to assert the quality of our metrics at all times. 
 
-These tests worked something like this:
+These tests worked somewhat like this:
 1. Create a sample output for a data provider with a given input (time frame, time aggregation, breakdown and filter)
 2. Store it in a safe internal JSON format
 3. Periodically (chronos job) run a job to assert that the output was still consistent
@@ -200,7 +198,7 @@ As mentioned before, because the Data Layer was responsible for delivering data 
 This was the responsibility of the orchestrator class, which was just: pulling data and then sending it to chart generation utils and pushing them to the final slide with the proper narrative and context in text / pictures around it.
 
 
-## From Hardcode to Configuration Based
+## From Hardcoded to Configuration Based
 
 After we had this technology up and running for the first reports, we started having many teams adding their own reports onto it.
 
